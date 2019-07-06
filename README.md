@@ -1,5 +1,5 @@
 # request-adapter-xhr
-An axios adapter for IE9/10
+An axios adapter for IE8/9
 
 ## install 
 ```
