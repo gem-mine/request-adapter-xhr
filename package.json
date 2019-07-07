@@ -1,7 +1,7 @@
 {
   "name": "@gem-mine/request-adapter-xhr",
   "version": "1.0.0",
-  "description": "An axios adapter for IE9/10",
+  "description": "An axios adapter for IE8/9",
   "main": "lib/index.js",
   "module": "module/index.js",
   "files": [
@@ -15,6 +15,12 @@
     "module": "cross-env BABEL_ENV=module babel ./src --out-dir ./module",
     "lint": "eslint src"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gem-mine/request-adapter-xhr.git"
+  },
+  "homepage": "https://github.com/gem-mine/request-adapter-xhr",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
