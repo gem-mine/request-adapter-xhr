@@ -4,6 +4,7 @@ const buildURL = require('./helper/buildURL')
 const parseHeaders = require('./helper/parseHeaders')
 const isURLSameOrigin = require('./helper/isURLSameOrigin')
 const createError = require('./helper/createError')
+const cookies = require('./helper/cookies')
 const btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || require('./helper/btoa')
 
 module.exports = function xhrAdapter(config) {
@@ -101,8 +102,6 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      const cookies = require('axios/lib/helpers/cookies')
-
       // Add xsrf header
       const xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName
         ? cookies.read(config.xsrfCookieName)

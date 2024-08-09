@@ -1,6 +1,6 @@
 {
   "name": "@gem-mine/request-adapter-xhr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An axios adapter for IE8/9",
   "main": "lib/index.js",
   "files": [
@@ -35,5 +35,8 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0"
+  },
+  "volta": {
+    "node": "14.17.5"
   }
 }
